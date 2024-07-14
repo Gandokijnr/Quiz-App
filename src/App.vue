@@ -59,8 +59,6 @@ const resetQuiz = () => {
   <div class="flex flex-col items-center justify-center h-full">
     <h1 class="text-3xl text-center p-3 w-full bg-white text-black rounded">Nigerian Quiz</h1>
     <p v-if="!completed" class="text-center p-3 w-full mt-3">Carefully select the correct answer:</p>
-   <span>{{ currentQuestionIndex.question }}</span>
-   <span>Question: {{ currentQuestionIndex }} of {{ questions.length }}</span>
     <div v-if="!completed" class="flex flex-col gap-4 mt-5">
       <h2 class="text-lg text-center">{{ currentQuestion.question }}</h2>
       <div class="flex flex-col gap-2">
@@ -95,6 +93,9 @@ const resetQuiz = () => {
         Follow me on twitter @ <a href="https://twitter.com/gand_tech" target="_blank">Gandoki Jr</a>
       </p>
     </div>
+      <hr class="mt-8 border-t-2 text-white" />
+    <span>{{ currentQuestionIndex.question }}</span>
+    <span>Question: {{ currentQuestionIndex + 1 }} of {{ questions.length }}</span>
   </div>
 </div>
 </template>
