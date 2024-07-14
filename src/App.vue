@@ -4,7 +4,7 @@ import { ref, computed } from 'vue';
 const questions = ref([
   {
     question: 'The Nigeria flags comprises of how many colors?',
-    answers: 1,
+    answers: 0,
     options: ['2', '3', '1', 'All of the above'],
     selected: null
   },
